@@ -8,6 +8,6 @@ DerivedData/
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
 
-Tests/IntegrationTestApp/IntegrationTestApp/amplify_outputs.json
+*amplify_outputs.json
 
 */apollo-ios-cli
