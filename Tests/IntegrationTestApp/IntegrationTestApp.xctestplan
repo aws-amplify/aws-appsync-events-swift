@@ -1,7 +1,7 @@
 {
   "configurations" : [
     {
-      "id" : "681B8494-DF7F-4834-897B-8FC896226120",
+      "id" : "C0161A8F-47D3-44A8-A218-DADA7B9EAC80",
       "name" : "Test Scheme Action",
       "options" : {
 
@@ -9,6 +9,7 @@
     }
   ],
   "defaultOptions" : {
+    "codeCoverage" : false,
     "targetForVariableExpansion" : {
       "containerPath" : "container:IntegrationTestApp.xcodeproj",
       "identifier" : "97098DB22DE76A2E00EED720",
