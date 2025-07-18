@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97098DC72DE76AAD00EED720 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 97098DC62DE76AAD00EED720 /* AWSCognitoAuthPlugin */; };
+		97098DC92DE76AAD00EED720 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 97098DC82DE76AAD00EED720 /* Amplify */; };
+		97098DCC2DE76AD200EED720 /* AWSAppSyncEvents in Frameworks */ = {isa = PBXBuildFile; productRef = 97098DCB2DE76AD200EED720 /* AWSAppSyncEvents */; };
+		97F31D272E2AB6D0009096B2 /* AWSAppSyncEvents in Frameworks */ = {isa = PBXBuildFile; productRef = 97F31D262E2AB6D0009096B2 /* AWSAppSyncEvents */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97098DD52DE76AFC00EED720 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97098DAB2DE76A2E00EED720 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97098DB22DE76A2E00EED720;
+			remoteInfo = IntegrationTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		97098DB32DE76A2E00EED720 /* IntegrationTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntegrationTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97098DD12DE76AFC00EED720 /* IntegrationTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntegrationTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		97098DB52DE76A2E00EED720 /* IntegrationTestApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IntegrationTestApp;
+			sourceTree = "<group>";
+		};
+		97098DD22DE76AFC00EED720 /* IntegrationTestAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IntegrationTestAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97098DB02DE76A2E00EED720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97098DC72DE76AAD00EED720 /* AWSCognitoAuthPlugin in Frameworks */,
+				97098DC92DE76AAD00EED720 /* Amplify in Frameworks */,
+				97F31D272E2AB6D0009096B2 /* AWSAppSyncEvents in Frameworks */,
+				97098DCC2DE76AD200EED720 /* AWSAppSyncEvents in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97098DCE2DE76AFC00EED720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97098DAA2DE76A2E00EED720 = {
+			isa = PBXGroup;
+			children = (
+				97098DB52DE76A2E00EED720 /* IntegrationTestApp */,
+				97098DD22DE76AFC00EED720 /* IntegrationTestAppTests */,
+				97098DB42DE76A2E00EED720 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97098DB42DE76A2E00EED720 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97098DB32DE76A2E00EED720 /* IntegrationTestApp.app */,
+				97098DD12DE76AFC00EED720 /* IntegrationTestAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97098DB22DE76A2E00EED720 /* IntegrationTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97098DBF2DE76A3100EED720 /* Build configuration list for PBXNativeTarget "IntegrationTestApp" */;
+			buildPhases = (
+				97098DAF2DE76A2E00EED720 /* Sources */,
+				97098DB02DE76A2E00EED720 /* Frameworks */,
+				97098DB12DE76A2E00EED720 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				97098DB52DE76A2E00EED720 /* IntegrationTestApp */,
+			);
+			name = IntegrationTestApp;
+			packageProductDependencies = (
+				97098DC62DE76AAD00EED720 /* AWSCognitoAuthPlugin */,
+				97098DC82DE76AAD00EED720 /* Amplify */,
+				97098DCB2DE76AD200EED720 /* AWSAppSyncEvents */,
+				97F31D262E2AB6D0009096B2 /* AWSAppSyncEvents */,
+			);
+			productName = IntegrationTestApp;
+			productReference = 97098DB32DE76A2E00EED720 /* IntegrationTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97098DD02DE76AFC00EED720 /* IntegrationTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97098DD72DE76AFC00EED720 /* Build configuration list for PBXNativeTarget "IntegrationTestAppTests" */;
+			buildPhases = (
+				97098DCD2DE76AFC00EED720 /* Sources */,
+				97098DCE2DE76AFC00EED720 /* Frameworks */,
+				97098DCF2DE76AFC00EED720 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97098DD62DE76AFC00EED720 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				97098DD22DE76AFC00EED720 /* IntegrationTestAppTests */,
+			);
+			name = IntegrationTestAppTests;
+			packageProductDependencies = (
+			);
+			productName = IntegrationTestAppTests;
+			productReference = 97098DD12DE76AFC00EED720 /* IntegrationTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97098DAB2DE76A2E00EED720 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					97098DB22DE76A2E00EED720 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					97098DD02DE76AFC00EED720 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 97098DB22DE76A2E00EED720;
+					};
+				};
+			};
+			buildConfigurationList = 97098DAE2DE76A2E00EED720 /* Build configuration list for PBXProject "IntegrationTestApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97098DAA2DE76A2E00EED720;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				97098DC52DE76AAD00EED720 /* XCRemoteSwiftPackageReference "amplify-swift" */,
+				97F31D252E2AB6D0009096B2 /* XCLocalSwiftPackageReference "../../../aws-appsync-events-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 97098DB42DE76A2E00EED720 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97098DB22DE76A2E00EED720 /* IntegrationTestApp */,
+				97098DD02DE76AFC00EED720 /* IntegrationTestAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97098DB12DE76A2E00EED720 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97098DCF2DE76AFC00EED720 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97098DAF2DE76A2E00EED720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97098DCD2DE76AFC00EED720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97098DD62DE76AFC00EED720 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97098DB22DE76A2E00EED720 /* IntegrationTestApp */;
+			targetProxy = 97098DD52DE76AFC00EED720 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		97098DBD2DE76A3100EED720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97098DBE2DE76A3100EED720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		97098DC02DE76A3100EED720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IntegrationTestApp/IntegrationTestApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aws.appsync.events.swift.IntegrationTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Debug;
+		};
+		97098DC12DE76A3100EED720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IntegrationTestApp/IntegrationTestApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aws.appsync.events.swift.IntegrationTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Release;
+		};
+		97098DD82DE76AFC00EED720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aws.appsync.events.swift.IntegrationTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntegrationTestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IntegrationTestApp";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Debug;
+		};
+		97098DD92DE76AFC00EED720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aws.appsync.events.swift.IntegrationTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntegrationTestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IntegrationTestApp";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97098DAE2DE76A2E00EED720 /* Build configuration list for PBXProject "IntegrationTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97098DBD2DE76A3100EED720 /* Debug */,
+				97098DBE2DE76A3100EED720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97098DBF2DE76A3100EED720 /* Build configuration list for PBXNativeTarget "IntegrationTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97098DC02DE76A3100EED720 /* Debug */,
+				97098DC12DE76A3100EED720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97098DD72DE76AFC00EED720 /* Build configuration list for PBXNativeTarget "IntegrationTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97098DD82DE76AFC00EED720 /* Debug */,
+				97098DD92DE76AFC00EED720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		97F31D252E2AB6D0009096B2 /* XCLocalSwiftPackageReference "../../../aws-appsync-events-swift" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../aws-appsync-events-swift";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		97098DC52DE76AAD00EED720 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.48.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		97098DC62DE76AAD00EED720 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97098DC52DE76AAD00EED720 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		97098DC82DE76AAD00EED720 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97098DC52DE76AAD00EED720 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+		97098DCB2DE76AD200EED720 /* AWSAppSyncEvents */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AWSAppSyncEvents;
+		};
+		97F31D262E2AB6D0009096B2 /* AWSAppSyncEvents */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AWSAppSyncEvents;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 97098DAB2DE76A2E00EED720 /* Project object */;
+}
