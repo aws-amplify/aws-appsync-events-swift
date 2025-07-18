@@ -21,6 +21,7 @@ concurrency:
 jobs:
   unit-test:
     name: "[${{ matrix.os }}] Unit Tests"
+    environment: unit-test # TODO: remove this
     strategy:
       fail-fast: false
       matrix:
@@ -43,6 +44,7 @@ jobs:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
           persist-credentials: false
+          token: ${{ secrets.PAT }} # TODO: remove this
 
       - name: ${{ matrix.os }}
         run: |
