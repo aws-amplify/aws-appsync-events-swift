@@ -330,7 +330,7 @@ final class AppSyncWebSocketClient: NSObject, URLSessionDelegate {
             .first()
             .sink { [weak self] _ in
                 self?.logger?.verbose("[AppSyncWebSocketClient] Keep alive timed out, disconnecting...")
-                Task {
+                Task { [weak self] in
                     try await self?.disconnect()
                 }
             }

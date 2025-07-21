@@ -26,6 +26,7 @@
 /* Begin PBXFileReference section */
 		97098DB32DE76A2E00EED720 /* IntegrationTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntegrationTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97098DD12DE76AFC00EED720 /* IntegrationTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntegrationTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97585EAF2E2AE271003A15E4 /* IntegrationTestApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = IntegrationTestApp.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -66,6 +67,7 @@
 		97098DAA2DE76A2E00EED720 = {
 			isa = PBXGroup;
 			children = (
+				97585EAF2E2AE271003A15E4 /* IntegrationTestApp.xctestplan */,
 				97098DB52DE76A2E00EED720 /* IntegrationTestApp */,
 				97098DD22DE76AFC00EED720 /* IntegrationTestAppTests */,
 				97098DB42DE76A2E00EED720 /* Products */,

@@ -1,0 +1,55 @@
+name: Unit Test
+
+on:
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      identifier:
+        required: true
+        type: string
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions: {}
+
+concurrency:
+  group: ${{ inputs.identifier || github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  unit-test:
+    name: "[${{ matrix.os }}] Unit Tests"
+    environment: unit-test # TODO: remove this
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - scheme: AWSAppSyncEvents
+            os: iOS
+            sdk: iphonesimulator
+            destination: platform=iOS Simulator,name=iPhone 15,OS=latest
+          - scheme: AWSAppSyncEvents
+            os: macOS
+            sdk: macosx
+            destination: platform=OS X,arch=x86_64
+          - scheme: AWSAppSyncEvents
+            os: tvOS
+            sdk: appletvsimulator
+            destination: platform=tvOS Simulator,name=Apple TV 4K (3rd generation),OS=latest
+
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        with:
+          persist-credentials: false
+          token: ${{ secrets.PAT }} # TODO: remove this
+
+      - name: ${{ matrix.os }}
+        run: |
+          xcodebuild test \
+          -scheme ${{ matrix.scheme }} \
+          -destination "${{ matrix.destination }}" \
+          -sdk ${{ matrix.sdk }} \
+          -only-testing:"${{ matrix.scheme }}Tests" | xcpretty --simple --color --report junit && exit ${PIPESTATUS[0]}
