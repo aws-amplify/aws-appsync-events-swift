@@ -7,10 +7,9 @@ on:
       identifier:
         required: true
         type: string
-  push:
-    branches: [ main ]
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 permissions: {}
 

@@ -1,6 +1,10 @@
 # Events API Swift Integration Tests
 
-The backend is provisioned with Amplify CLI (Gen2). 
+The backend is provisioned with creating an Amplify CLI Gen 2 project by runing the following command. 
+
+```
+npm create amplify@latest
+```
 
 Update `auth/resource.ts`
 
