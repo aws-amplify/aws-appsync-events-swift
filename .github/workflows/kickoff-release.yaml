@@ -62,7 +62,7 @@ jobs:
         shell: bash
         run: |
           LOGS=$(git log --pretty=format:%s origin/release..HEAD | awk -F '\n' '{print $1}')
-          GROUPED_LOGS=$(echo $LOGS | ./.github/scripts/group-commit-message.awk)
+          GROUPED_LOGS=$(echo "$LOGS" | ./.github/scripts/group-commit-message.awk)
           awk -v date=$(date +"%Y-%m-%d") \
             -v version="$RELEASE_VERSION" '
             NR == 2 {
