@@ -97,7 +97,7 @@ final class AppSyncWebSocketClient: NSObject, URLSessionDelegate {
                 channel: channel,
                 authorization: authHeaders)
             
-            guard let encodedjsonData = try? JSONEncoder().encode(message),
+            guard let encodedjsonData = try? encoder.encode(message),
                   let jsonString = String(data: encodedjsonData, encoding: .utf8)
             else {
                 throw EventsError.unknown("Error in encoding JSON data for websocket subscribe message.")
@@ -253,6 +253,9 @@ final class AppSyncWebSocketClient: NSObject, URLSessionDelegate {
         request.setValue("aws-appsync-event-ws", forHTTPHeaderField: "Sec-WebSocket-Protocol")
         request.setValue(requestToSign.url?.host, forHTTPHeaderField: "host")
         request.setValue(await PackageInfo.userAgent, forHTTPHeaderField: "x-amz-user-agent")
+        request.setValue("application/json; charset=UTF-8", forHTTPHeaderField: "content-type")
+        request.setValue("application/json", forHTTPHeaderField: "accept")
+        request.setValue("amz-1.0", forHTTPHeaderField: "content-encoding")
         
         // add authorization headers
         for authHeader in authHeaders {
@@ -346,6 +349,9 @@ final class AppSyncWebSocketClient: NSObject, URLSessionDelegate {
         var requestToSign = URLRequest(url: httpURL)
         requestToSign.httpMethod = "POST"
         requestToSign.setValue(host, forHTTPHeaderField: "host")
+        requestToSign.setValue("application/json; charset=UTF-8", forHTTPHeaderField: "content-type")
+        requestToSign.setValue("application/json", forHTTPHeaderField: "accept")
+        requestToSign.setValue("amz-1.0", forHTTPHeaderField: "content-encoding")
         return requestToSign
     }
 }
