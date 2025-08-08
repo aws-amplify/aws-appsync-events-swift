@@ -1,13 +1,13 @@
 {
-  "originHash" : "ac7439ef6e211b020a2cf0fce95d2080bfaa57c86c791bd33ffc85482994d172",
+  "originHash" : "0adef1c5486ceb7e8e8e541a21edf04078bdbd6497e54c0d1b5f27ab6b6ec844",
   "pins" : [
     {
       "identity" : "amplify-swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/aws-amplify/amplify-swift",
       "state" : {
-        "revision" : "4e7a74ffb124cc25d92837656389ed4c67b46340",
-        "version" : "2.48.0"
+        "revision" : "04311f3279f00ddc40b7e64bedc1efc1261ca0c5",
+        "version" : "2.48.2"
       }
     },
     {
@@ -60,8 +60,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-log.git",
       "state" : {
-        "revision" : "3d8596ed08bd13520157f0355e35caed215ffbfa",
-        "version" : "1.6.3"
+        "revision" : "ce592ae52f982c847a4efc0dd881cc9eb32d29f2",
+        "version" : "1.6.4"
       }
     }
   ],

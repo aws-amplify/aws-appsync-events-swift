@@ -30,6 +30,7 @@ class EventsWebSocketSubscribeTests: IntegrationTestBase {
             return
         }
         
+        let restClient = events.createRestClient(publishAuthorizer: apiKeyAuthorizer)
         let websocketClient = events.createWebSocketClient(
             connectAuthorizer: apiKeyAuthorizer,
             publishAuthorizer: apiKeyAuthorizer,
@@ -49,7 +50,7 @@ class EventsWebSocketSubscribeTests: IntegrationTestBase {
             // let the subscription establish
             try await Task.sleep(seconds: 5)
             
-            let result = try await websocketClient.publish(
+            let result = try await restClient.publish(
                 channelName: defaultChannel,
                 event: event)
             guard case PublishResultStatus.success = result.status else {
@@ -79,6 +80,7 @@ class EventsWebSocketSubscribeTests: IntegrationTestBase {
         
         try await signIn()
         
+        let restClient = events.createRestClient(publishAuthorizer: authTokenAuthorizer)
         let websocketClient = events.createWebSocketClient(
             connectAuthorizer: authTokenAuthorizer,
             publishAuthorizer: authTokenAuthorizer,
@@ -98,7 +100,7 @@ class EventsWebSocketSubscribeTests: IntegrationTestBase {
             // let the subscription establish
             try await Task.sleep(seconds: 5)
             
-            let result = try await websocketClient.publish(
+            let result = try await restClient.publish(
                 channelName: defaultChannel,
                 event: event)
             guard case PublishResultStatus.success = result.status else {
@@ -126,6 +128,7 @@ class EventsWebSocketSubscribeTests: IntegrationTestBase {
             return
         }
         
+        let restClient = events.createRestClient(publishAuthorizer: iamAuthorizer)
         let websocketClient = events.createWebSocketClient(
             connectAuthorizer: iamAuthorizer,
             publishAuthorizer: iamAuthorizer,
@@ -145,7 +148,7 @@ class EventsWebSocketSubscribeTests: IntegrationTestBase {
             // let the subscription establish
             try await Task.sleep(seconds: 5)
             
-            let result = try await websocketClient.publish(
+            let result = try await restClient.publish(
                 channelName: defaultChannel,
                 event: "123")
             guard case PublishResultStatus.success = result.status else {
@@ -175,6 +178,7 @@ class EventsWebSocketSubscribeTests: IntegrationTestBase {
         
         try await signIn()
         
+        let restClient = events.createRestClient(publishAuthorizer: iamAuthorizer)
         let websocketClient = events.createWebSocketClient(
             connectAuthorizer: iamAuthorizer,
             publishAuthorizer: iamAuthorizer,
@@ -194,7 +198,7 @@ class EventsWebSocketSubscribeTests: IntegrationTestBase {
             // let the subscription establish
             try await Task.sleep(seconds: 5)
             
-            let result = try await websocketClient.publish(
+            let result = try await restClient.publish(
                 channelName: defaultChannel,
                 event: event)
             guard case PublishResultStatus.success = result.status else {
@@ -224,6 +228,7 @@ class EventsWebSocketSubscribeTests: IntegrationTestBase {
             return
         }
         
+        let restClient = events.createRestClient(publishAuthorizer: apiKeyAuthorizer)
         let websocketClient = events.createWebSocketClient(
             connectAuthorizer: apiKeyAuthorizer,
             publishAuthorizer: apiKeyAuthorizer,
@@ -250,7 +255,7 @@ class EventsWebSocketSubscribeTests: IntegrationTestBase {
             // let the subscription establish
             try await Task.sleep(seconds: 5)
             
-            let result = try await websocketClient.publish(
+            let result = try await restClient.publish(
                 channelName: defaultChannel,
                 events: eventsList)
             guard case PublishResultStatus.success = result.status else {
@@ -280,6 +285,7 @@ class EventsWebSocketSubscribeTests: IntegrationTestBase {
         
         try await signIn()
         
+        let restClient = events.createRestClient(publishAuthorizer: authTokenAuthorizer)
         let websocketClient = events.createWebSocketClient(
             connectAuthorizer: authTokenAuthorizer,
             publishAuthorizer: authTokenAuthorizer,
@@ -306,7 +312,7 @@ class EventsWebSocketSubscribeTests: IntegrationTestBase {
             // let the subscription establish
             try await Task.sleep(seconds: 5)
             
-            let result = try await websocketClient.publish(
+            let result = try await restClient.publish(
                 channelName: defaultChannel,
                 events: eventsList)
             guard case PublishResultStatus.success = result.status else {
@@ -336,6 +342,7 @@ class EventsWebSocketSubscribeTests: IntegrationTestBase {
         
         try await signIn()
         
+        let restClient = events.createRestClient(publishAuthorizer: iamAuthorizer)
         let websocketClient = events.createWebSocketClient(
             connectAuthorizer: iamAuthorizer,
             publishAuthorizer: iamAuthorizer,
@@ -362,7 +369,7 @@ class EventsWebSocketSubscribeTests: IntegrationTestBase {
             // let the subscription establish
             try await Task.sleep(seconds: 5)
             
-            let result = try await websocketClient.publish(
+            let result = try await restClient.publish(
                 channelName: defaultChannel,
                 events: eventsList)
             guard case PublishResultStatus.success = result.status else {
@@ -392,6 +399,7 @@ class EventsWebSocketSubscribeTests: IntegrationTestBase {
         
         try await signIn()
         
+        let restClient = events.createRestClient(publishAuthorizer: iamAuthorizer)
         let websocketClient = events.createWebSocketClient(
             connectAuthorizer: iamAuthorizer,
             publishAuthorizer: iamAuthorizer,
@@ -418,7 +426,7 @@ class EventsWebSocketSubscribeTests: IntegrationTestBase {
             // let the subscription establish
             try await Task.sleep(seconds: 5)
             
-            let result = try await websocketClient.publish(
+            let result = try await restClient.publish(
                 channelName: defaultChannel,
                 events: eventsList)
             guard case PublishResultStatus.success = result.status else {
