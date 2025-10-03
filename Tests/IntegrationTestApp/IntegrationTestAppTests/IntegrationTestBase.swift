@@ -34,7 +34,7 @@ class IntegrationTestBase: XCTestCase {
         events = Events(endpointURL: eventsEndpoint)
         apiKeyAuthorizer = APIKeyAuthorizer(apiKey: apiKey)
         authTokenAuthorizer = AuthTokenAuthorizer(fetchLatestAuthToken: getUserPoolAccessToken)
-        iamAuthorizer = IAMAuthorizer(signRequest: AppSyncEventsSigner.createAppSyncSigner(region: region))
+        iamAuthorizer = IAMAuthorizer(signRequest: AWSCognitoAuthPlugin.createAppSyncSigner(region: region))
     }
     
     func signIn() async throws {
