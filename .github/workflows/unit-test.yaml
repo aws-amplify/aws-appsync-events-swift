@@ -27,17 +27,17 @@ jobs:
           - scheme: AWSAppSyncEvents
             os: iOS
             sdk: iphonesimulator
-            destination: platform=iOS Simulator,name=iPhone 15,OS=latest
+            destination: platform=iOS Simulator,name=iPhone 16 Pro Max,OS=18.5
           - scheme: AWSAppSyncEvents
             os: macOS
             sdk: macosx
-            destination: platform=OS X,arch=x86_64
+            destination: platform=macOS,arch=arm64
           - scheme: AWSAppSyncEvents
             os: tvOS
             sdk: appletvsimulator
-            destination: platform=tvOS Simulator,name=Apple TV 4K (3rd generation),OS=latest
+            destination: platform=tvOS Simulator,name=Apple TV 4K (3rd generation),OS=18.5
 
-    runs-on: macos-14
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
